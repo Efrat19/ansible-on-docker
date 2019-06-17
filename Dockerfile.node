@@ -1,0 +1,2 @@
+FROM sickp/alpine-sshd
+RUN apk add python

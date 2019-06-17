@@ -1,0 +1,9 @@
+---
+- name: Install nginx
+  hosts: all
+  tasks:
+    - name: install lighttpd
+      apk:
+        name: lighttpd
+        state: present
+        update_cache: yes

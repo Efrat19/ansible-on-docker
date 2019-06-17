@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  master:
+    container_name: ansible_master
+    build:
+      context: .
+      dockerfile: Dockerfile.master
+    volumes:
+      - ./inventory:/etc/ansible/hosts
+      - ./playbooks:/playbooks
+  node:
+    container_name: ansible_node
+    build:
+      context: .
+      dockerfile: Dockerfile.node
+    ports:
+      - "22"
