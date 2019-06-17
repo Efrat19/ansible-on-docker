@@ -1,6 +1,8 @@
 # Ansible on docker
 
-## a parctical use of my docker [ansible:alpine!]() image
+## Ansible lab on docker-compose
+
+#### no need to install anything to run and explore ansible, just clone the repo and you are good to go
 
 ### preperations:
 you will have to run 
@@ -11,7 +13,7 @@ you will have to run
     - `yes` - confirm connection
     - `root` - the root password of the node service (:scream:)
 
-you are all set up! 
+you are all set! 
 
 ### playtime:
 

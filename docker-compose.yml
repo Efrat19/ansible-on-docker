@@ -2,16 +2,12 @@ version: "3.7"
 services:
   master:
     container_name: ansible_master
-    build:
-      context: .
-      dockerfile: Dockerfile.master
+    image: efrat19/ansible-alpine
     volumes:
       - ./inventory:/etc/ansible/hosts
       - ./playbooks:/playbooks
   node:
     container_name: ansible_node
-    build:
-      context: .
-      dockerfile: Dockerfile.node
+    image: efrat19/sshd-alpine
     ports:
       - "22"
