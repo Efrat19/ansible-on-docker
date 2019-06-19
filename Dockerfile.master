@@ -1,9 +1,0 @@
-FROM nginx:alpine
-
-RUN apk add ansible 
-
-RUN mkdir /etc/ansible && echo "localhost" > /etc/ansible/hosts
-
-RUN apk add openssh-keygen openssh-client
-
-COPY ./inventory /etc/ansible/hosts
